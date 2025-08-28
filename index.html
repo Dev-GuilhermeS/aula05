@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro</title>
+</head>
+<body>
+    <main>
+        <section id="azul">
+                <article>
+                    <div>
+                        <button>Origem</button>
+                    </div>
+                </article>
+            </section>
+            <section id="vermelho">
+                ...
+            </section>
+            <section id="amarelo">
+                Elemento que deseja-se selecionar
+            </section>
+        </main>
+        <script>
+            let botao = document.querySelector("button");
+            let div = botao.parentElement;
+            let article = div.parentElement;
+            let sectionOrigem = article.parentElement;
+            let sectionD = sectionOrigem.nextElementSibling.nextElementSibling;
+            console.log(sectionD)
+        </script>
+        
+</body>
+</html>
